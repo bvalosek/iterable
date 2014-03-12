@@ -12,13 +12,13 @@ module.exports = {
   iterableEqualArray: function (i, a)
   {
     var iter = i.iterator();
-    a.forEach(function(x, index) {
+    for (var x = 0; x < a.length; x++) {
       var n = iter.next();
       if (n.done !== false)
         return false;
-      if (n.value !== a[index])
+      if (n.value !== a[x])
         return false;
-    });
+    }
 
     var last = iter.next();
     if (last.done !== true || last.value !== undefined)
