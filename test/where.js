@@ -31,7 +31,7 @@ test('Parameter validation', function(t) {
   t.plan(6);
 
   t.throws(function() { new WhereIterable(null, util.identity); }, TypeError);
-  t.throws(function() { new WhereIterable([1,2], util.identity); }, TypeError);
+  t.throws(function() { new WhereIterable('garbage', util.identity); }, TypeError);
   t.throws(function() { new WhereIterable(true, util.identity); }, TypeError);
 
   t.throws(function() { new WhereIterable(util.empty(), null); }, TypeError);
