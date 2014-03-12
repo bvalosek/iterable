@@ -1,9 +1,14 @@
 # Iterable
 
+[![Build Status](https://travis-ci.org/bvalosek/iterable.png?branch=master)](https://travis-ci.org/bvalosek/iterable)
+[![NPM version](https://badge.fury.io/js/iterable.png)](http://badge.fury.io/js/iterable)
+
 A library that provides lazily-evaluated `Sequence`-based iterable objects with
 deferred querying and aggregation.
 
 > This project is still pre-1.0 and not yet considered stable.
+
+[![browser support](https://ci.testling.com/bvalosek/iterable.png)](https://ci.testling.com/bvalosek/iterable)
 
 ## Installation
 
