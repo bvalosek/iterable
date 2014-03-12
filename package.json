@@ -2,25 +2,51 @@
   "name": "iterable",
   "version": "0.1.0",
   "description": "Lazily evaluated sequence-based iterable objects with deferred querying and aggregation.",
-  "license": "MIT",
+  "author": {
+    "name": "Brandon Valosek",
+    "email": "bvalosek@gmail.com",
+    "url": "http://brandon.is/awesome"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:bvalosek/iterable.git"
   },
+  "license": "MIT",
   "keywords": [
     "enumerable",
     "iterable",
     "iterator",
     "lazy",
     "collections",
-    "sequence"
+    "collection",
+    "sequence",
+    "sequences"
   ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "main": "index.js",
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/28..canary",
+      "firefox/23..nightly",
+      "safari/5.1..latest",
+      "opera/latest",
+      "opera/next",
+      "iphone/latest",
+      "ipad/latest",
+      "android-browser/latest"
+    ]
+  },
+  "devDependencies": {
+    "tape": "^2.10.2"
+  },
   "dependencies": {
     "typedef": "^1.0.2"
-  },
-  "author": {
-    "name": "Brandon Valosek",
-    "email": "bvalosek@gmail.com",
-    "url": "http://brandon.is/awesome"
   }
 }
