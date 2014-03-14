@@ -80,6 +80,15 @@ annotations that work great with the [Tern](http://ternjs.net/) code inference
 system. Combined with the Node plugin (see this project's `.tern-project`
 file), you can have intelligent autocomplete for methods in this library.
 
+## Testing
+
+Testing is done with [Tape](http://github.com/substack/tape) and can be run
+with the command `npm test`.
+
+Automated CI cross-browser testing is provided by
+[Testling](http://ci.testling.com/bvalosek/iterable), and server-side testing
+is done with [Travis CI](https://travis-ci.org/bvalosek/iterable).
+
 ## License
 Copyright 2014 Brandon Valosek
 
