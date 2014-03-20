@@ -10,7 +10,7 @@ test('Flatten with proj and index', function(t) {
   // skeet style
   var sm = new SelectManyIterable(util.fromArray(numbers),
     function(x, index) { return (x + index).toString(); },
-    function(x, c) { return x + ': ' + c.toString(); });
+    function(x, c) { return x + ': ' + c; });
 
   t.ok(util.iterableEqualArray(sm, [
     '3: 3',
