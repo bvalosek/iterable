@@ -20,25 +20,29 @@ npm install iterable
 
 ## Usage
 
-Typically you'll want to interact with the `Sequence` class:
+With CommonJS modules in Node or Browserify:
 
 ```javascript
 var Sequence = require('iterable').Sequence;
+```
 
-var mySequence = Sequence.from([1,2,3,4]).where( ... );
+With AMD / RequireJS:
+
+```
+TBD
+```
+
+Via script tags and polluting the global scope:
+
+```
+TBD
 ```
 
 ### Creating a Sequence
 
-### Distilling a Sequence
+### Using Sequence as a Mixin 
 
-## Lazily Evaluation and Deferred Execution
-
-## The `Iterable` Interface
-
-### `Iterator`
-
-## `Sequence` Member Functions
+## Sequence Member Functions
 
 #### any
 #### average
@@ -79,6 +83,8 @@ The source files are all decorated with [JSDoc3](http://usejsdoc.org/)-style
 annotations that work great with the [Tern](http://ternjs.net/) code inference
 system. Combined with the Node plugin (see this project's `.tern-project`
 file), you can have intelligent autocomplete for methods in this library.
+
+![tern screenshot](/doc/tern.png)
 
 ## Testing
 
