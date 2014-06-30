@@ -1,6 +1,6 @@
 {
   "name": "iterable",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Lazily evaluated sequence-based iterable objects with deferred querying and aggregation.",
   "author": {
     "name": "Brandon Valosek",
