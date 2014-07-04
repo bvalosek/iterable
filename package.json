@@ -44,9 +44,9 @@
     ]
   },
   "devDependencies": {
-    "tape": "~2.10.2"
+    "tape": "^2.13.3"
   },
   "dependencies": {
-    "typedef": "~1.0.2"
+    "typedef": "^1.0.4"
   }
 }
