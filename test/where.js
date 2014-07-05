@@ -1,6 +1,6 @@
 var test          = require('tape');
 var util          = require('./util.js');
-var WhereIterable = require('../lib/WhereIterable.js');
+var WhereIterable = require('../lib/iterables/WhereIterable.js');
 
 test('Iterable interface', function(t) {
   t.plan(1);

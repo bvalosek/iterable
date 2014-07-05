@@ -1,6 +1,6 @@
 var Iterable      = require('../lib/Iterable.js');
 var Iterator      = require('../lib/Iterator.js');
-var IterableArray = require('../lib/IterableArray.js');
+var IterableArray = require('../lib/iterables/factories/IterableArray.js');
 
 module.exports = {
 

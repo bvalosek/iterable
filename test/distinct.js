@@ -1,6 +1,6 @@
 var test             = require('tape');
 var util             = require('./util.js');
-var DistinctIterable = require('../lib/DistinctIterable.js');
+var DistinctIterable = require('../lib/iterables/DistinctIterable.js');
 
 test('Default select', function(t) {
   t.plan(1);
@@ -22,5 +22,4 @@ test('Param validation', function(t) {
   t.plan(2);
   t.throws(function() { new DistinctIterable(util.empty, 'garbage'); });
   t.throws(function() { new DistinctIterable('gabage', util.identity); });
-
 });
