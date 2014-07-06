@@ -1,6 +1,6 @@
 var test     = require('tape');
-var util     = require('./util.js');
-var Sequence = require('../lib/Sequence.js');
+var util     = require('../util.js');
+var Sequence = require('../../lib/Sequence.js');
 
 test('Basic reduce with no seed', function(t) {
   t.plan(1);

@@ -1,6 +1,6 @@
 var test           = require('tape');
-var util           = require('./util.js');
-var ConcatIterable = require('../lib/iterables/ConcatIterable.js');
+var util           = require('../util.js');
+var ConcatIterable = require('../../lib/iterables/ConcatIterable.js');
 
 test('Lazy eval for first', function(t) {
   t.plan(1);

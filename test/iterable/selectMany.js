@@ -1,6 +1,6 @@
 var test               = require('tape');
-var util               = require('./util.js');
-var SelectManyIterable = require('../lib/iterables/SelectManyIterable.js');
+var util               = require('../util.js');
+var SelectManyIterable = require('../../lib/iterables/SelectManyIterable.js');
 
 test('Flatten with proj and index', function(t) {
   t.plan(1);

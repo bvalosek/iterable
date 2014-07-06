@@ -1,6 +1,6 @@
 var test          = require('tape');
-var util          = require('./util.js');
-var IterableRange = require('../lib/iterables/factories/IterableRange.js');
+var util          = require('../util.js');
+var IterableRange = require('../../lib/iterables/factories/IterableRange.js');
 
 test('Basic sequences', function(t) {
   t.plan(2);

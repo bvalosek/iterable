@@ -1,6 +1,6 @@
 var test          = require('tape');
-var util          = require('./util.js');
-var SelectIterable = require('../lib/iterables/SelectIterable.js');
+var util          = require('../util.js');
+var SelectIterable = require('../../lib/iterables/SelectIterable.js');
 
 test('Iterable interface', function(t) {
   t.plan(1);

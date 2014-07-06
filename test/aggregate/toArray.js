@@ -1,6 +1,6 @@
 var test     = require('tape');
-var util     = require('./util.js');
-var Sequence = require('../lib/Sequence.js');
+var util     = require('../util.js');
+var Sequence = require('../../lib/Sequence.js');
 
 test('Decoupled', function(t) {
   t.plan(1);

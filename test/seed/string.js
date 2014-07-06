@@ -1,6 +1,6 @@
 var test           = require('tape');
-var util           = require('./util.js');
-var IterableString = require('../lib/iterables/factories/IterableString.js');
+var util           = require('../util.js');
+var IterableString = require('../../lib/iterables/factories/IterableString.js');
 
 test('Iterator inteface', function(t) {
   t.plan(1);
