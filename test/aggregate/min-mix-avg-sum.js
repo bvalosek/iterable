@@ -23,16 +23,16 @@ test('Select nums', function(t) {
 
 test('Empty sequence', function(t) {
   t.plan(4);
-  t.strictEqual(Sequence.empty.min(), undefined);
-  t.strictEqual(Sequence.empty.max(), undefined);
-  t.strictEqual(Sequence.empty.sum(), undefined);
-  t.strictEqual(Sequence.empty.average(), undefined);
+  t.strictEqual(Sequence.empty().min(), undefined);
+  t.strictEqual(Sequence.empty().max(), undefined);
+  t.strictEqual(Sequence.empty().sum(), undefined);
+  t.strictEqual(Sequence.empty().average(), undefined);
 });
 
 test('Param validation', function(t) {
   t.plan(4);
-  t.throws(function() { Sequence.empty.min('garbage'); }, TypeError);
-  t.throws(function() { Sequence.empty.max('garbage'); }, TypeError);
-  t.throws(function() { Sequence.empty.sum('garbage'); }, TypeError);
-  t.throws(function() { Sequence.empty.average('garbage'); }, TypeError);
+  t.throws(function() { Sequence.empty().min('garbage'); }, TypeError);
+  t.throws(function() { Sequence.empty().max('garbage'); }, TypeError);
+  t.throws(function() { Sequence.empty().sum('garbage'); }, TypeError);
+  t.throws(function() { Sequence.empty().average('garbage'); }, TypeError);
 });

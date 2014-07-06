@@ -4,10 +4,10 @@ var Sequence = require('../../lib/Sequence.js');
 
 test('Empty sequence', function(t) {
   t.plan(4);
-  t.strictEqual(Sequence.empty.first(), undefined);
-  t.strictEqual(Sequence.empty.first(function(x) { return true; }), undefined);
-  t.strictEqual(Sequence.empty.last(), undefined);
-  t.strictEqual(Sequence.empty.last(function(x) { return true; }), undefined);
+  t.strictEqual(Sequence.empty().first(), undefined);
+  t.strictEqual(Sequence.empty().first(function(x) { return true; }), undefined);
+  t.strictEqual(Sequence.empty().last(), undefined);
+  t.strictEqual(Sequence.empty().last(function(x) { return true; }), undefined);
 });
 
 test('Basic first last', function(t) {
@@ -33,6 +33,6 @@ test('Missed elements', function(t) {
 
 test('Param validation', function(t) {
   t.plan(2);
-  t.throws(function() { Sequence.empty.first('garbage'); }, TypeError);
-  t.throws(function() { Sequence.empty.last('garbage'); }, TypeError);
+  t.throws(function() { Sequence.empty().first('garbage'); }, TypeError);
+  t.throws(function() { Sequence.empty().last('garbage'); }, TypeError);
 });

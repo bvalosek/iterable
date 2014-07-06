@@ -18,11 +18,11 @@ test('Basic reduce with seed', function(t) {
 
 test('Empty sequence', function(t) {
   t.plan(1);
-  t.strictEqual(Sequence.empty.reduce(function() { }), undefined);
+  t.strictEqual(Sequence.empty().reduce(function() { }), undefined);
 });
 
 test('Param validation', function(t) {
   t.plan(2);
-  t.throws(function() { Sequence.empty.reduce(); }, TypeError);
-  t.throws(function() { Sequence.empty.reduce('garbage'); }, TypeError);
+  t.throws(function() { Sequence.empty().reduce(); }, TypeError);
+  t.throws(function() { Sequence.empty().reduce('garbage'); }, TypeError);
 });
