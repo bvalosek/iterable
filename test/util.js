@@ -68,6 +68,36 @@ module.exports = {
   },
 
   /**
+   * @param {Iterable} iterable
+   * @return {array.<any>}
+   */
+  toArray: function(iterable)
+  {
+    var ret = [];
+    var iter = iterable.iterator();
+    for (var n; !(n = iter.next()).done; ) {
+      var item = n.value;
+      ret.push(item);
+    }
+    return ret;
+  },
+
+  /**
+   * @param {Iterable} iterable
+   * @return {object.<string>}
+   */
+  toObject: function(iterable)
+  {
+    var ret = {};
+    var iter = iterable.iterator();
+    for (var n; !(n = iter.next()).done; ) {
+      var item = n.value;
+      ret[item.key] = this.toArray(item);
+    }
+    return ret;
+  },
+
+  /**
    * @param {array} a
    * @return {Iterable}
    */
