@@ -54,3 +54,24 @@ test('param validation', function(t) {
   t.throws(function() { new GroupByIterable(util.empty(), identity, 'shit'); },
     TypeError);
 });
+
+test('Object keys', function(t) {
+  t.plan(5);
+
+  var input = ['abc', 'hello', 'def', 'there', 'four'].map(function(x, index) {
+
+    return {
+      key: { value: index, toString: function() { return this.value; } },
+      value: x
+    };
+
+  });
+
+  input = util.fromArray(input);
+
+  var g = new GroupByIterable(input, function(x) { return x.key; });
+
+  util.toArray(g).forEach(function(x) {
+    t.ok(x.key.value !== undefined);
+  });
+});
